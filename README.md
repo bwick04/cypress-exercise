@@ -15,7 +15,7 @@ npm install
 ## Running tests in docker container
 
 1. Make sure you have docker installed on your machine and running.
-2. Run the `start.sh` script to create the docker image from the dockerfile. This will run the container in interactive mode with the specified cypress image in the dockerfile. From here you can run commands to run the tests in the container itself.
+2. Run the `start.sh` script to create the docker image from the dockerfile. This will run the container in interactive mode with the specified cypress image in the dockerfile. From here, you can run different commands to run tests in the container itself.
 
 ```
 bash start.sh
