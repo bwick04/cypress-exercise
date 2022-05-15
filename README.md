@@ -21,7 +21,7 @@ npm install
 bash start.sh
 ```
 
-3. Run the tests
+3. Run the tests in the docker container.
 
 ```
 npm run chrome:test
