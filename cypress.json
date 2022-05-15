@@ -1,0 +1,5 @@
+{
+  "baseUrl": "https://www.w3.org/",
+  "ignoreTestFiles": "*.js",
+  "testFiles": "**/*.{feature,features}"
+}
