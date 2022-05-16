@@ -1,0 +1,7 @@
+.env
+node_modules/
+cypress/screenshots/
+cypress/downloads/
+*.mp4
+mochawesome.html
+.DS_store

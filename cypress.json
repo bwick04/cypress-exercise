@@ -1,5 +1,14 @@
 {
   "baseUrl": "https://www.w3.org/",
   "ignoreTestFiles": "*.js",
-  "testFiles": "**/*.{feature,features}"
+  "testFiles": "**/*.{feature,features}",
+  "screenshotsFolder": "cypress/reports/mochareports/assets",
+  "reporter": "./node_modules/mochawesome/src/mochawesome.js",
+  "watchForFileChanges": false,
+  "reporterOptions": {
+    "reportDir": "cypress/reports/",
+    "overwrite": false,
+    "html": true,
+    "json": true
+  }
 }

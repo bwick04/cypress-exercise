@@ -1,0 +1,13 @@
+version: "3"
+services:
+  chrome:
+    image: "cypress-exercise:1.0.0"
+    command: "npm run chrome:test"
+    volumes:
+      - ./cypress/reports/chrome-reports:/cypress-project/cypress/reports
+
+  firefox:
+    image: "cypress-exercise:1.0.0"
+    command: "npm run firefox:test"
+    volumes:
+      - ./cypress/reports/firefox-reports:/cypress-project/cypress/reports

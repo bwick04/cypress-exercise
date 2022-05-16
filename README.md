@@ -12,21 +12,47 @@
 npm install
 ```
 
-## Running tests in docker container
+## Running the tests for the first time:
 
 1. Make sure you have docker installed on your machine and running.
-2. Run the `start.sh` script to create the docker image from the dockerfile. This will run the container in interactive mode with the specified cypress image in the dockerfile. From here, you can run different commands to run tests in the container itself.
+2. Run the `start.sh` script. If you make any updates to test scripts you will have to run this script again.
 
 ```
 bash start.sh
 ```
 
-3. Run the tests in the docker container.
+This will create the docker image and run the container that will execute the test on both chrome and firefox.
+
+## Docker commands:
+
+### Generate the image
 
 ```
-npm run chrome:test
+docker build -t cypress-exercise:1.0.0 .
 ```
 
+### Run both the chrome and firefox tests
+
 ```
-npm run firefox:test
+docker-compose up
 ```
+
+### Run the container in interactive mode to run tests separetly
+
+```
+docker container run -it cypress-exercise:1.0.0 /bin/bash
+```
+
+## Reporting
+
+After running the tests you will see two reports that were generated:
+
+Results from the chrome test will be saved here:
+
+`./cypress/reports/chrome-reports`
+
+Results from the firefox test will be saved here:
+
+`./cypress/reports/firefox-reports`
+
+open the `.html` with your favorite browser to see the results from the run.
