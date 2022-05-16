@@ -37,7 +37,7 @@ docker build -t cypress-exercise:1.0.0 .
 docker-compose up
 ```
 
-### Run the container in interactive mode to run tests separetly
+### Run the container in interactive mode to run tests individually
 
 ```
 docker container run -it cypress-exercise:1.0.0 /bin/bash
