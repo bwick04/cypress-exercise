@@ -28,7 +28,8 @@ And("All linked pages are live", () => {
       hrefLink &&
       // Exclude the mailto link that launches system mail application
       !hrefLink.includes("mailto") &&
-      // Exclude the skip link that takes you to the bottom of the page since we're already verify the current page
+      // Exclude the link that takes you to the current page since
+      // we are already verifying this.
       !hrefLink.includes("#w3c_content_body")
     ) {
       cy.request(hrefLink).then((response) => {
