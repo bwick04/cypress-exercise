@@ -37,7 +37,7 @@ Results from the firefox test will be saved here:
 
 `./cypress/reports/firefox-reports`
 
-open the `.html` with your favorite browser to see the results from the run.
+open the `.html` file in each of the folders with your favorite browser to see the results from the run.
 
 ## Docker command cheatsheat:
 
